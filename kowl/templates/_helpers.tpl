@@ -74,9 +74,9 @@ Server Listen Port for Kowl
 */}}
 {{- define "kowl.serverListenPort" -}}
 {{- if .Values.kowl.config.server -}}
-{{- .Values.kowl.config.server.listenPort | default 9090 }}
+{{- .Values.kowl.config.server.listenPort | default 8080 }}
 {{- else -}}
-9090
+8080
 {{- end }}
 {{- end }}
 
