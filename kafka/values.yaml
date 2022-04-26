@@ -252,11 +252,11 @@ auth:
       ##   - user2
       ##
       clientUsers:
-        - user
+        - kiwi
       ## @param auth.sasl.jaas.clientPasswords Kafka client passwords. This is mandatory if more than one user is specified in clientUsers
       ##
-      ## clientPasswords:
-      ##   - password1
+      clientPasswords:
+        - password1
       ##   - password2"
       ##
       clientPasswords: []
@@ -265,7 +265,8 @@ auth:
       interBrokerUser: admin
       ## @param auth.sasl.jaas.interBrokerPassword Kafka inter broker communication password for SASL authentication
       ##
-      interBrokerPassword: ""
+      interBrokerPassword:
+        - password2
       ## @param auth.sasl.jaas.zookeeperUser Kafka ZooKeeper user for SASL authentication
       ##
       zookeeperUser: ""
@@ -317,7 +318,7 @@ auth:
     ## @param auth.tls.password Password to access the JKS files or PEM key when they are password-protected.
     ## Note: ignored when using 'existingSecret'.
     ##
-    password: ""
+    password: "password1"
     ## @param auth.tls.existingSecret Name of the secret containing the password to access the JKS files or PEM key when they are password-protected. (`key`: `password`)
     ##
     existingSecret: ""
