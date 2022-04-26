@@ -90,7 +90,10 @@ affinity: {}
 kowl:
   # Config.yaml is required for Kowl and Kowl Business.
   # See reference config: https://github.com/cloudhut/kowl/blob/master/docs/config/kowl.yaml)
-  config: {}
+  config:
+    kafka:
+      brokers:
+        - 10.42.0.45:9092
   # roles:
   # roleBindings:
 
@@ -134,8 +137,8 @@ secret:
   # KAFKA_TLS_CAFILEPATH=/etc/kowl/secrets/<key-name>
   keyName:
     cloudhut-license-token: "cloudhut-license-token"
-    kafka-tls-passphrase: "password1"
-    kafka-sasl-password: "password1"
+    kafka-tls-passphrase: ""
+    kafka-sasl-password: ""
 
   # Secret values in case you want the chart to create a secret
   # Kafka secrets

@@ -252,12 +252,12 @@ auth:
       ##   - user2
       ##
       clientUsers:
-        - kiwi
+        - user
       ## @param auth.sasl.jaas.clientPasswords Kafka client passwords. This is mandatory if more than one user is specified in clientUsers
       ##
       clientPasswords:
-        - password1
-      ##   - password2"
+      #    - password1 
+      ##   - password2
       ##
       clientPasswords: []
       ## @param auth.sasl.jaas.interBrokerUser Kafka inter broker communication user for SASL authentication
@@ -266,7 +266,7 @@ auth:
       ## @param auth.sasl.jaas.interBrokerPassword Kafka inter broker communication password for SASL authentication
       ##
       interBrokerPassword:
-        - password2
+      #  - password2
       ## @param auth.sasl.jaas.zookeeperUser Kafka ZooKeeper user for SASL authentication
       ##
       zookeeperUser: ""
