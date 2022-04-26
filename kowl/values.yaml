@@ -137,8 +137,8 @@ secret:
   # KAFKA_TLS_CAFILEPATH=/etc/kowl/secrets/<key-name>
   keyName:
     cloudhut-license-token: "cloudhut-license-token"
-    kafka-tls-passphrase: ""
-    kafka-sasl-password: ""
+    kafka-tls-passphrase: "kafka-tls-passphrase"
+    kafka-sasl-password: "kafka-sasl-password"
 
   # Secret values in case you want the chart to create a secret
   # Kafka secrets
